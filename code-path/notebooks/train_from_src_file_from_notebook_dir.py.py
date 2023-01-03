@@ -1,6 +1,6 @@
 # Databricks notebook source
 # MAGIC %md
-# MAGIC # Train Custom Model in a SRC File
+# MAGIC # Train Custom Model in a SRC File From Notebook Directory 
 
 # COMMAND ----------
 
@@ -20,6 +20,8 @@ import mlflow
 import inspect
 import sys
 import os
+
+sys.path.append(os.path.abspath(".."))
 
 from src.custom_module import SklearnModelWrapper
 
