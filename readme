@@ -1,0 +1,16 @@
+To arrange folders and file when you create custom modules and use it in a seperate notebook for inference under a repo follow below pattern:
+
+repo/
+  module1/
+  src/
+     __init__.py
+     custom_module.py
+  test_from_src_file.py 
+  
+
+  
+  ---------------------------------------------------
+In test_from_src_file.py notebook now you can import below modules:
+
+import src.custom_module
+import module1
