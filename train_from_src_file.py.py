@@ -70,7 +70,7 @@ mlflow.sklearn.log_model(
 # COMMAND ----------
 
 # re-load and test predict
-model_uri = "models:/stack_databricks_bugs_code_path_src_file/2"
+model_uri = "models:/stack_databricks_bugs_code_path_src_file/1"
 loaded_model = mlflow.pyfunc.load_model(model_uri)
 
 print(loaded_model)

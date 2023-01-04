@@ -21,8 +21,6 @@ import inspect
 import sys
 import os
 
-sys.path.append(os.path.abspath(".."))
-
 from src.custom_module import SklearnModelWrapper
 
 # COMMAND ----------
@@ -77,3 +75,7 @@ loaded_model = mlflow.pyfunc.load_model(model_uri)
 
 print(loaded_model)
 loaded_model.predict([[0, 0, 1.3]])
+
+# COMMAND ----------
+
+
